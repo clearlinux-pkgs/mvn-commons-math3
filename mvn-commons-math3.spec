@@ -4,10 +4,12 @@
 #
 Name     : mvn-commons-math3
 Version  : 3.4.1
-Release  : 1
+Release  : 2
 URL      : https://repo1.maven.org/maven2/org/apache/commons/commons-math3/3.4.1/commons-math3-3.4.1.jar
 Source0  : https://repo1.maven.org/maven2/org/apache/commons/commons-math3/3.4.1/commons-math3-3.4.1.jar
-Source1  : https://repo1.maven.org/maven2/org/apache/commons/commons-math3/3.4.1/commons-math3-3.4.1.pom
+Source1  : https://repo1.maven.org/maven2/org/apache/commons/commons-math3/3.1.1/commons-math3-3.1.1.jar
+Source2  : https://repo1.maven.org/maven2/org/apache/commons/commons-math3/3.1.1/commons-math3-3.1.1.pom
+Source3  : https://repo1.maven.org/maven2/org/apache/commons/commons-math3/3.4.1/commons-math3-3.4.1.pom
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : Apache-2.0
@@ -32,8 +34,14 @@ data components for the mvn-commons-math3 package.
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/commons/commons-math3/3.4.1
 cp %{SOURCE0} %{buildroot}/usr/share/java/.m2/repository/org/apache/commons/commons-math3/3.4.1
 
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/commons/commons-math3/3.1.1
+cp %{SOURCE1} %{buildroot}/usr/share/java/.m2/repository/org/apache/commons/commons-math3/3.1.1
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/commons/commons-math3/3.1.1
+cp %{SOURCE2} %{buildroot}/usr/share/java/.m2/repository/org/apache/commons/commons-math3/3.1.1
+
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/commons/commons-math3/3.4.1
-cp %{SOURCE1} %{buildroot}/usr/share/java/.m2/repository/org/apache/commons/commons-math3/3.4.1
+cp %{SOURCE3} %{buildroot}/usr/share/java/.m2/repository/org/apache/commons/commons-math3/3.4.1
 
 
 %files
@@ -41,5 +49,7 @@ cp %{SOURCE1} %{buildroot}/usr/share/java/.m2/repository/org/apache/commons/comm
 
 %files data
 %defattr(-,root,root,-)
+/usr/share/java/.m2/repository/org/apache/commons/commons-math3/3.1.1/commons-math3-3.1.1.jar
+/usr/share/java/.m2/repository/org/apache/commons/commons-math3/3.1.1/commons-math3-3.1.1.pom
 /usr/share/java/.m2/repository/org/apache/commons/commons-math3/3.4.1/commons-math3-3.4.1.jar
 /usr/share/java/.m2/repository/org/apache/commons/commons-math3/3.4.1/commons-math3-3.4.1.pom
