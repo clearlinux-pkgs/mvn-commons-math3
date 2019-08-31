@@ -4,7 +4,7 @@
 #
 Name     : mvn-commons-math3
 Version  : 3.4.1
-Release  : 4
+Release  : 5
 URL      : https://repo1.maven.org/maven2/org/apache/commons/commons-math3/3.4.1/commons-math3-3.4.1.jar
 Source0  : https://repo1.maven.org/maven2/org/apache/commons/commons-math3/3.4.1/commons-math3-3.4.1.jar
 Source1  : https://repo.maven.apache.org/maven2/org/apache/commons/commons-math3/3.2/commons-math3-3.2-sources.jar
